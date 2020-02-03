@@ -1,0 +1,1 @@
+- tsconfig may be created with New>tsconfig.js in WS
