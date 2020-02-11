@@ -52,8 +52,6 @@ function isBalanced2(str) {
   return stack.length === 0;
 }
 
-
-
 assert(isBalanced2('(foo { bar (baz) [boo] })') === true);
 assert(isBalanced2('({()[]})') === true);
 assert(isBalanced2('([[]{}])') === true);

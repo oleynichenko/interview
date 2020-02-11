@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Input</title>
+</head>
+<body>
+  <input list="Country">
+  <datalist id="Country">
+    <option value="India">
+    <option value="Italy">
+    <option value="Iran">
+    <option value="Israel">
+    <option value="Indonesia">
+  </datalist>
+
+  <form onsubmit="return false"
+        oninput="o.value = parseInt(a.value) + parseInt(b.value)">
+    <input name="a" type="number"> +
+    <input name="b" type="number"> =
+    <output name="o" for="a b"></output>
+    <!--второй вариант-->
+    <output name="o" />
+  </form>
+</body>
+</html>
