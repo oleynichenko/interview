@@ -6,6 +6,7 @@ function countUnique1(arr) {
 
 function countUnique2(arr) {
   let current;
+
   return arr.filter(item => {
     if (item !== current) {
       current = item;
@@ -16,8 +17,22 @@ function countUnique2(arr) {
   }).length;
 }
 
-function countUnique3(arr) {
+function countUnique(arr) {
+  if (arr.length <= 1) return arr.length;
 
+  arrCopy = [...arr];
+  leftIndex = 0;
+  rightIndex = 1;
+
+  while(rightIndex < arrCopy.length) {
+    if (arrCopy[rightIndex] !== arrCopy[leftIndex]) {
+      arrCopy[++leftIndex] = arrCopy[rightIndex];
+    }
+
+    rightIndex++;
+  }
+
+  return leftIndex + 1;
 }
 
 describe("countUnique", function() {

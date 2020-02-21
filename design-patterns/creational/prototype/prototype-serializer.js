@@ -66,7 +66,7 @@ let john = new Person(
   new Address('123 London Road', 'London', 'UK')
 );
 
-let s = new Serializer([Person,Address]);
+let s = new Serializer([Person, Address]);
 
 jane = s.clone(john);
 jane.name = 'Jane';

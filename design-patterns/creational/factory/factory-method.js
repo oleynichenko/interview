@@ -13,7 +13,7 @@ class Point {
   }
 }
 
-let p2 = Point.newPolarPoint(5, Math.PI/2);
+let p2 = Point.newPolarPoint(5, Math.PI / 2);
 console.log(p2);
 
 // this line will not work if newCartesianPoint is static!

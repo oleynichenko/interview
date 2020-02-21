@@ -66,4 +66,3 @@ console.log(redCircle.toString());
 
 let redHalfCircle = new TransparentShape(redCircle, 0.5);
 console.log(redHalfCircle.toString());
-
