@@ -25,6 +25,7 @@ class Facade {
    */
   public operation(): string {
     let result = 'Facade initializes subsystems:\n';
+
     result += this.subsystem1.operation1();
     result += this.subsystem2.operation1();
     result += 'Facade orders subsystems to perform the action:\n';

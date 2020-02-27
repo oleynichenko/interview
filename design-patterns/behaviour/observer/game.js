@@ -54,12 +54,15 @@ class Rat {
     game.ratEnters.subscribe(
       this.handleRatEnters.bind(this)
     );
+
     game.ratDies.subscribe(
       this.handleRatDies.bind(this)
     );
+
     game.notifyRat.subscribe(
       this.handleNotifyRat.bind(this)
     );
+
     game.fireRatEnters(this);
   }
 

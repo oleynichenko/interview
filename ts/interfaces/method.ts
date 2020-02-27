@@ -1,9 +1,9 @@
-interface Person {
+interface Personn {
   name: string;
   say(name: string): string;
 }
 
-class Man implements Person {
+class Man implements Personn {
   constructor(public name) {}
 
   say() {

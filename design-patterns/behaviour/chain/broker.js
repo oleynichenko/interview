@@ -65,9 +65,14 @@ class Creature {
   }
 
   get defense() {
-    let q = new Query(this.name, WhatToQuery.defense,
-      this.initial_defense);
+    let q = new Query(
+      this.name,
+      WhatToQuery.defense,
+      this.initial_defense
+    );
+
     this.game.performQuery(this, q);
+
     return q.value;
   }
 
@@ -102,8 +107,7 @@ class DoubleAttackModifier extends CreatureModifier {
 
   handle(sender, query) {
     if (query.creatureName === this.creature.name &&
-      query.whatToQuery === WhatToQuery.attack)
-    {
+      query.whatToQuery === WhatToQuery.attack) {
       query.value *= 2;
     }
   }

@@ -7,8 +7,7 @@ function readonly (
 }
 
 class Woman {
-  constructor(public name: string){
-  }
+  constructor(public name: string) { }
 
   @readonly
   print(): void {
@@ -23,3 +22,14 @@ jane.print = function() {
 };
 
 jane.print();
+
+class SomeService {
+  someMethod(x: number) {
+
+  }
+}
+
+const someService = new SomeService();
+someService.someMethod(4);
+
+someService['someMethod'](4);
